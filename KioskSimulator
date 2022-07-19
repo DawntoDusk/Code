@@ -1,4 +1,4 @@
-##Kiosk Simulator
+##Kiosk Simulator (Java)
 
 import java.util.Scanner;
 public class d31_kiosk {
