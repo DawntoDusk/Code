@@ -10,6 +10,7 @@ public class b32_findlocation {
         Scanner input=new Scanner(System.in);
         System.out.print("Where am 1? (1-100): ");
         int loc = input.nextInt();
+
         for (int i=1; i<=100; i++){
             if (i==loc){
                 System.out.printf("%3s","@");
@@ -21,5 +22,6 @@ public class b32_findlocation {
             }
         }
         input.close();
-    } 
+    }
 }
+
