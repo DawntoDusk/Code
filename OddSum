@@ -1,4 +1,4 @@
-## Odd Sum
+## Odd Sum (Python)
 '''
 * Write a program that asks the user to enter some numbers, 
 keeps adding only the odd numbers and ignores the even numbers. 
