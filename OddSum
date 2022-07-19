@@ -1,0 +1,40 @@
+## Odd Sum
+'''
+* Write a program that asks the user to enter some numbers, 
+keeps adding only the odd numbers and ignores the even numbers. 
+The program ends if the user enters a prime number. 
+* Write a program that detects if a given number is prime
+'''
+def factoring(num):
+    factoring_list=[]
+    factor_num=1
+    while factor_num<=(num/2):
+        if num%factor_num==0:
+            factoring_list.append(factor_num)
+        factor_num=factor_num+1
+    factoring_list.append(num)
+    return factoring_list
+
+def prime_check(number):
+    factors_list=factoring(number)
+    if len(factors_list) == 2:
+        return True
+    else:
+        return False
+
+if __name__ == "__main__":
+    input_num=int(input("Enter a number: "))
+    print("You entered "+str(input_num))
+    sum=0
+
+    while prime_check(input_num) != True:
+        if input_num%2 != 0:
+            sum+=input_num
+            print("The number "+ str(input_num)+" is odd")
+            print("The current sum is "+ str(input_num))
+        else:
+            print("The number "+ str(input_num)+" is even")
+        input_num=int(input("Enter a number: "))
+        print("You entered "+str(input_num))
+    print("The final sum is "+ str(input_num))
+    print("The number "+str(input_num)+" is prime") 
